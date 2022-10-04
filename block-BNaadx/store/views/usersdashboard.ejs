@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+</head>
+<body>
+    <header class="p-8 text-center bg-blue-400 text-4xl text-white flex justify-between">
+        <h1>
+            Users Dashboard
+        </h1>
+        <h2>
+            <a href="/users/Logout">
+                <button>Logout</button>
+            </a>
+        </h2>
+    </header>
+    <main>
+        <div>
+            <nav>
+                <ul class="flex flex-wrap text-3xl text-white flex justify-evenly">
+                  <li class="p-24 bg-pink-200 mt-32">
+                    <a href="/products">
+                      <button>View Product</button>
+                    </a>
+                  </li>
+                  <li class="p-24 bg-pink-200 mt-32">
+                    <a href="/users/cart">
+                      <button>View Cart</button>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </main>
+</body>
+</html>
