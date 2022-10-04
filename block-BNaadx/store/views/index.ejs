@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+  </head>
+  <body >
+    <header class="p-8 text-center bg-blue-400 text-4xl text-white">
+      <nav>
+        <ul>
+          <li >
+            <a href="/">
+              Customized Clothing
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="box-border">
+      <div >
+        <nav>
+          <ul class="flex flex-wrap text-3xl text-white">
+            <li class="p-24 bg-pink-200 ml-32 mt-16">
+              <a href="/admin/login">
+                <button>Admin Login</button>
+              </a>
+            </li>
+            <li class="p-24 bg-pink-200 ml-32 mt-16">
+              <a href="/admin/register">
+                <button>Admin SignUp</button>
+              </a>
+            </li>
+            <li class="p-24 bg-pink-200 ml-32 mt-16">
+              <a href="/users/login">
+                <button>Users Login</button>
+              </a>
+            </li>
+            <li class="p-24 bg-pink-200 ml-32 mt-16">
+              <a href="/users/register">
+                <button>Users SignUp</button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

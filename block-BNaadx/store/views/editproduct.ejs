@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+</head>
+<body>
+    <header class="p-8 text-center bg-blue-400 text-4xl text-white flex justify-between">
+        <h1>
+            Edit Product
+        </h1>
+        <h2>
+            <a href="/admin/Logout">
+                <button>Logout</button>
+            </a>
+        </h2>
+    </header>
+    <main>
+        <div>
+            <fieldset class="border-solid border-black border w-2/4 flex justify-center items-center mt-32 ml-auto mr-auto">
+            <form action="/products/<%= product._id %>/edit" method="post">
+                <input class="block mt-16" type="text" name="name" placeholder="product name" value="<%= product.name %>">
+                <!-- <input class="block mt-16" type="number" name="quantity" placeholder="quantity"> -->
+                <input class="block mt-16" type="number" name="price" placeholder="price" value="<%= product.price %>">
+                <input class="block mt-16" type="url" name="image" placeholder="image url" value="<%= product.image %>">
+                <input type="text" name="description" placeholder="description" value="<%= product.description %>">
+                <input class="mt-16" type="submit" placeholder="Add product" >
+            </form>
+        </fieldset>
+        </div>
+    </main>
+</body>
+</html>
